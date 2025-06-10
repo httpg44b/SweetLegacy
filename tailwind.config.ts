@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Sweet Legacy brand colors
+				lavender: {
+					50: '#f8f6ff',
+					100: '#f0ebff',
+					200: '#e4dbff',
+					300: '#d1bfff',
+					400: '#b898ff',
+					500: '#9d6bff',
+					600: '#8a47ff',
+					700: '#7c3aed',
+					800: '#6730c3',
+					900: '#552899'
+				},
+				rose: {
+					50: '#fef7f7',
+					100: '#feecec',
+					200: '#fdd8d8',
+					300: '#fcb5b5',
+					400: '#f87171',
+					500: '#ef4444',
+					600: '#dc2626',
+					700: '#b91c1c',
+					800: '#991b1b',
+					900: '#7f1d1d'
+				},
+				beige: {
+					50: '#fefdf9',
+					100: '#fef7ed',
+					200: '#fde9d3',
+					300: '#fbd4a8',
+					400: '#f8b572',
+					500: '#f59542',
+					600: '#e6761f',
+					700: '#c05621',
+					800: '#9c4221',
+					900: '#7e381f'
 				}
 			},
 			borderRadius: {
@@ -84,11 +122,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				cursive: ['Dancing Script', 'cursive'],
+				elegant: ['Playfair Display', 'serif']
 			}
 		}
 	},
