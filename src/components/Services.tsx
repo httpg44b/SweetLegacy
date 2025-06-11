@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -6,37 +5,37 @@ const Services = () => {
   const services = [
     {
       title: "Administração de medicações orais",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/fRqdwVbC/card1.webp",
       description: "Controle rigoroso de horários e dosagens"
     },
     {
       title: "Monitoramento de sinais vitais",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/g0NG9hkc/card2.webp",
       description: "Acompanhamento constante da saúde"
     },
     {
       title: "Cuidadores para Alzheimer e Parkinson",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/52j0m1Bk/card3.webp",
       description: "Especialização em cuidados neurológicos"
     },
     {
       title: "Acompanhamento em deslocamentos e passeios",
-      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/3wkQ6xNz/card4.webp",
       description: "Segurança e companhia em atividades externas"
     },
     {
       title: "Acompanhamento hospitalar",
-      image: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/GhhQC7nn/card5.webp",
       description: "Presença reconfortante em momentos difíceis"
     },
     {
       title: "Rotinas de higiene pessoal",
-      image: "https://images.unsplash.com/photo-1439886183900-e79ec0057170?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/0jf3WzRg/card6.webp",
       description: "Cuidados com dignidade e respeito"
     },
     {
       title: "Preparo de refeições e necessidades cotidianas",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://i.postimg.cc/nL8qwZ4T/card7.webp",
       description: "Alimentação saudável e cuidados domésticos"
     }
   ];
@@ -57,21 +56,23 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="card-gradient overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl"
+              style={{ backgroundColor: '#f4a79b' }}
+              className="overflow-hidden border-none shadow-none hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-50 w-full flex items-center justify-center">
                 <img 
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  className="max-w-full max-h-full object-contain p-4"
+                  style={{ width: '100%', height: '100%', maxWidth: '100%', maxHeight: '100%' }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-lavender-900/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-elegant text-lg font-semibold text-lavender-800 mb-3">
+                <h3 className="font-elegant text-lg font-semibold text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-lavender-600">
+                <p className="text-white/90">
                   {service.description}
                 </p>
               </div>

@@ -1,0 +1,51 @@
+/* Se usar CSS tradicional */
+#logo {
+  height: 200px; /* ou o tamanho desejado */
+  width: auto;
+}
+
+/* Se usar CSS Modules (importe como styles from './styles.module.css') */
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.botHead {
+  font-size: 1.280rem; /* 18px */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0; /* Espaçamento vertical */
+  position: relative;
+}
+
+/* Efeito hover mais elaborado */
+.botHead:hover {
+  transform: translateY(-2px);
+}
+
+/* Linha inferior animada */
+.botHead::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f43f5e; /* Cor rosa similar ao hover */
+  transition: width 0.3s ease;
+}
+
+.botHead:hover::after {
+  width: 100%;
+}
+
+.btn-gradient {
+  padding: 0.75rem 2rem; /* Equivalente a py-3 px-8 */
+  font-size: 3.125rem; /* 18px (text-lg) */
+  font-weight: 600; /* font-semibold */
+}
+
+.headerContainer {
+    background-color: white;
+    height: 160px;
+}

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Heart, Phone } from 'lucide-react';
+import logo from '../img/logo.png'
 
 const Footer = () => {
   return (
@@ -11,11 +12,12 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
               <img 
-                src="/lovable-uploads/1269a854-0af0-49e2-860f-fdb1a0d3a20e.png" 
+                id='logo'
+                src={logo}
                 alt="Sweet Legacy" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto"
               />
-              <span className="font-cursive text-2xl font-bold">Sweet Legacy</span>
+                                                                                     
             </div>
             <p className="text-lavender-100 leading-relaxed mb-6">
               Cuidando com amor, carinho e dedicação dos nossos idosos queridos. 
@@ -62,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-lavender-700 mt-12 pt-8 text-center">
           <p className="text-lavender-200">
-            © 2024 Sweet Legacy. Todos os direitos reservados. Feito com 💜 para cuidar de quem você ama.
+            © 2025 Sweet Legacy. Todos os direitos reservados. Feito com 💜 para cuidar de quem você ama.
           </p>
         </div>
       </div>

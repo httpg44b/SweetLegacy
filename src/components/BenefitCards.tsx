@@ -1,12 +1,11 @@
 
-import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Heart, Clock, Award } from 'lucide-react';
 
 const BenefitCards = () => {
   const benefits = [
     {
-      icon: <div className="w-12 h-12 rounded-full bg-lavender-100 flex items-center justify-center text-2xl">🩺</div>,
+      icon: <div className="w-12 h-12 rounded-full bg-[#d9d3e3] flex items-center justify-center text-2xl">🩺</div>,
       title: "Acompanhamento Profissional",
       description: "Equipe qualificada e treinada para cuidados especializados"
     },
@@ -34,7 +33,8 @@ const BenefitCards = () => {
           {benefits.map((benefit, index) => (
             <Card 
               key={index}
-              className="card-gradient p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl"
+              className="p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 rounded-3xl border-0"
+              style={{ backgroundColor: '#d9d3e3' }}
             >
               <div className="flex justify-center mb-6">
                 {benefit.icon}
