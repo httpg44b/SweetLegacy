@@ -9,6 +9,7 @@ import ClientsCarousel from '@/components/ClientsCarousel';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import AboutUs from '@/components/AboutUs';
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Hero />
       <BenefitCards />
       <WhyChoose />
+      <AboutUs />
       <Services />
       <ClientsCarousel />
       <FAQ />

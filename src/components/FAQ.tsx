@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "Quais os locais em que o serviço está disponível?",
-      answer: "Atendemos toda a região metropolitana de São Paulo e cidades próximas. Para consultar disponibilidade em sua localidade específica, entre em contato conosco pelo WhatsApp. Nosso objetivo é levar nossos cuidados especializados onde quer que você precise."
+      answer: "Atendemos toda a região metropolitana de São Paulo e interior. Para consultar disponibilidade em sua localidade específica, entre em contato conosco pelo WhatsApp. Nosso objetivo é levar nossos cuidados especializados onde quer que você precise."
     }
   ];
 

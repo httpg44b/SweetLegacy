@@ -35,7 +35,7 @@ const WhyChoose = () => {
               </p>
               
               <p className="text-lg md:text-xl font-medium">
-                Na Sweet Legacy, cuidamos com carinho, respeito e dedicação, preservando o legado de amor e cuidado que sua família merece. 💜
+                Na Sweet Legacy, cuidamos com carinho, respeito e dedicação, preservando o legado de amor e cuidado que seus queridos merecem. 💜
               </p>
             </div>
           </div>
