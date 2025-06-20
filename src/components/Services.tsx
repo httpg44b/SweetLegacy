@@ -14,11 +14,6 @@ const Services = () => {
       description: "Acompanhamento constante da saúde"
     },
     {
-      title: "Cuidadores para Alzheimer e Parkinson",
-      image: "https://i.postimg.cc/52j0m1Bk/card3.webp",
-      description: "Especialização em cuidados neurológicos"
-    },
-    {
       title: "Acompanhamento em deslocamentos e passeios",
       image: "https://i.postimg.cc/3wkQ6xNz/card4.webp",
       description: "Segurança e companhia em atividades externas"
