@@ -32,12 +32,12 @@ const Hero = () => {
           </div>
 
           <h1 className="font-cursive text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Cuidado com
-            <span className="block text-rose-300">Amor e Respeito</span>
+            Cuidar de quem cuidou de nós
+            <span className="block text-rose-300">é honrar um legado</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-lavender-100 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Apoio profissional e humanizado para quem você ama
+            Apoio profissional e humanizado aos idosos que você ama
           </p>
           
           <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
