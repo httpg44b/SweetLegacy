@@ -7,14 +7,34 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { MapPin } from 'lucide-react';
 
 const ClientsCarousel = () => {
   const clients = [
-    { name: "Dona Verda", age: "65 anos", image: "https://images.pexels.com/photos/18429461/pexels-photo-18429461/free-photo-of-mulher-cama-leito-comendo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" },
-    { name: "Seu Francisco", age: "78 anos", image: "https://i.postimg.cc/yxH3cJpc/cliente.webp" },
-    { name: "Dona Maria", age: "82 anos", image: "https://images.pexels.com/photos/16364307/pexels-photo-16364307/free-photo-of-mulheres-bebida-drink-vidro.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" },
-    { name: "Sr. Alberto", age: "70 anos", image: "https://images.pexels.com/photos/7551661/pexels-photo-7551661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-    { name: "Dona Lourdes", age: "75 anos", image: "https://images.pexels.com/photos/18429416/pexels-photo-18429416/free-photo-of-mulher-cama-leito-sentado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
+    {
+      name: "Maria Tereza",
+      age: "80 anos",
+      country: "Itália",
+      image: new URL('../img/mariatereza.jpg', import.meta.url).href
+    },
+    {
+      name: "Francisco",
+      age: "82 anos",
+      country: "Itália",
+      image: new URL('../img/francisco.jpg', import.meta.url).href
+    },
+    {
+      name: "Giovanna",
+      age: "73 anos",
+      country: "Itália",
+      image: new URL('../img/giovanna.jpg', import.meta.url).href
+    },
+    {
+      name: "Lourdes",
+      age: "85 anos",
+      country: "Itália",
+      image: new URL('../img/lourdes.jpg', import.meta.url).href
+    }
   ];
 
   return (
@@ -46,9 +66,11 @@ const ClientsCarousel = () => {
                         <h3 className="font-elegant text-2xl font-semibold mb-2">
                           {client.name}
                         </h3>
-                        <p className="text-lg opacity-90">
-                          {client.age}
-                        </p>
+                        <p className="text-lg opacity-90">{client.age}</p>
+                        <div className="flex items-center gap-2 mt-1 text-white/80">
+                          <MapPin className="w-4 h-4" />
+                          <span>{client.country}</span>
+                        </div>
                       </div>
                     </div>
                   </Card>
