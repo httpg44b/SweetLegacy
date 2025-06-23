@@ -18,7 +18,7 @@ const ClientsCarousel = () => {
       image: new URL('../img/mariatereza.jpg', import.meta.url).href
     },
     {
-      name: "Francisco",
+      name: "Geovanne",
       age: "82 anos",
       country: "Itália",
       image: new URL('../img/francisco.jpg', import.meta.url).href
