@@ -22,7 +22,7 @@ const ClientsCarousel = () => {
       age: "82 anos",
       country: "Itália",
       image: new URL('../img/francisco.jpg', import.meta.url).href
-    },
+    }/*,
     {
       name: "Giovanna",
       age: "73 anos",
@@ -34,7 +34,7 @@ const ClientsCarousel = () => {
       age: "85 anos",
       country: "Itália",
       image: new URL('../img/lourdes.jpg', import.meta.url).href
-    }
+    }*/
   ];
 
   return (
